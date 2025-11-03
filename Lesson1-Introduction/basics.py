@@ -33,6 +33,14 @@ def after_school():
     print("Do homework")
     print("Play Midnight Racing: Tokyo")
 
-morning_routine()
-school_schedule()
-after_school()
+# morning_routine()
+# school_schedule()
+# after_school()
+
+def calc_area_rect(w,l):
+    w = 5
+    l = 10
+    area = w * l
+    print(f"Area of rectangle = {area}")
+
+calc_area_rect(5,10)
