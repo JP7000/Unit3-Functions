@@ -40,15 +40,13 @@ else:
 # Practice 1: Safe Division
 # Instructions: Create a function that divides two numbers safely
 # ==========================
-def safe_division(a,b):
+def safe_division(a, b):
     try:
         result = a / b
         return result
     except ZeroDivisionError:
         print("You can't divide by zero.")
         return 0
-print(safe_division(10,2))
-print(safe_division(10,0))
 
 
 # ==========================
@@ -77,3 +75,12 @@ print(f"You are {user_age} years old.")
 # Challenge 2: Grade Input Validator
 # Instructions: Keep asking for a grade until a valid number between 0-100 is entered
 # ==========================
+def get_valid_grade():
+    try:
+        grade = float(input("Enter grade (0-100): "))
+        if 0 <= grade <= 100:
+            return grade
+        else:
+            print("Error: Grade must be between 0 and 100!")
+    except ValueError:
+        print("Error: Please enter a valid number!")
