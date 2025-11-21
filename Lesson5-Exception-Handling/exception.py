@@ -29,12 +29,6 @@ except ZeroDivisionError:
     print("Oops! Can't divide by 0.")
 except ValueError:
     print("That's not a number")
-else:
-
-
-
-
-
 
 # ==========================
 # Practice 1: Safe Division
@@ -45,8 +39,10 @@ def safe_division(a, b):
         result = a / b
         return result
     except ZeroDivisionError:
-        print("You can't divide by zero.")
+        print("Warning: Division By Zero!")
         return 0
+    except Exception as error:
+        print(f"An error occured: {error}")
 
 
 # ==========================
