@@ -27,7 +27,7 @@ def join_study_squad(members):
         return count + 1
     except (TypeError):
         return 0
-    finally:)
-        print("Squad Disbanded :("
+    finally:
+        print("Squad Disbanded :(")
 print(join_study_squad("Alice"))
    
